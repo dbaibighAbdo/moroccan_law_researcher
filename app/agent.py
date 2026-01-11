@@ -21,12 +21,12 @@ deep_law_expert_agent = create_deep_agent(
         YOUR SUBAGENTS:
         - vectorDB-researcher: RAG retrieval from Moroccan law documents, statutes, and case law vectors
         - knowledge-graph-researcher: Knowledge graph queries for legal relationships, hierarchies, and entity connections in Moroccan law
-        - web-researcher: Web research for recent jurisprudence, official gazettes, and supplementary sources **MANDATORY: Use this subagents always for EVERY legal query**
+        - web-researcher: Web research for recent jurisprudence, official gazettes, and supplementary sources 
 
         INSTRUCTIONS:
         1. Analyze the user's legal question in Arabic. Identify key concepts, statutes (Dahir, loi, décret), articles, and jurisdictions.
 
-        2. Use all the subagents as needed to gather relevant information:
+        2. Determine which subagent(s) to utilize:
         - Use vectorDB-researcher for direct text retrieval from legal corpora
         - Use knowledge-graph-researcher for relational queries (e.g., "What cites Article 123?")
         - Use web-researcher for current developments or external sources

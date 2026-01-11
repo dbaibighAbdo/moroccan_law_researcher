@@ -19,7 +19,7 @@ Schema:
 {schema}
 
 Question:
-{question}
+{query}
 
 Cypher Query:
 """
@@ -37,7 +37,7 @@ cypher_qa = GraphCypherQAChain.from_llm(
 def cypher_retriever(query: str) -> str:
     """Retrieve information from the knowledge graph."""
     try:
-        graph_result = cypher_qa.invoke({"question": query})
+        graph_result = cypher_qa.invoke({"query": query})
         graph_answer = graph_result.get("result", "").strip()
         if not graph_answer:
             graph_answer = ""

@@ -8,6 +8,7 @@ neo4jvector = Neo4jVector.from_existing_index(
     embedding=embeddings,
     graph=graph,
     index_name="legal_vector_index",
+    embedding_dimension=1536
 )
 
 retriever = neo4jvector.as_retriever(search_type="similarity", k=3)
