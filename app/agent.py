@@ -49,13 +49,13 @@ deep_law_expert_agent = create_deep_agent(
         ## النتائج الرئيسية
         - النقاط الرئيسية
 
-        ## المصادر
-        - [المادة X، القانون Y، تاريخ Z]
-
         ## التحليل
         [شرح موجز]
 
-        Respond only in formal Arabic unless asked otherwise.""",
+        ## المصادر
+        - [المادة X، القانون Y، تاريخ Z]
+
+        Respond only in formal professional Arabic unless asked otherwise.""",
     subagents= subagents,
     checkpointer=memory,
     model=llm,
