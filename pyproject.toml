@@ -10,6 +10,7 @@ dependencies = [
     "langchain>=1.2.3",
     "langchain-neo4j>=0.7.0",
     "langchain-openai>=1.1.7",
+    "langgraph>=1.0.5",
     "python-dotenv>=1.2.1",
     "streamlit>=1.52.2",
     "streamlit-arabic-support-wrapper>=1.1",

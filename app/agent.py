@@ -4,7 +4,7 @@ from langchain_core.messages import HumanMessage
 from helpers.llm import llm
 from subAgents.vectorDB_researcher import vectorDB_subagent
 from subAgents.knowledgeGraph_researcher import kg_subagent
-from subAgents.web_reseacher import research_subagent
+from subAgents.web_researcher import research_subagent
 
 
 subagents = [
