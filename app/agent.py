@@ -41,7 +41,7 @@ deep_law_expert_agent = create_deep_agent(
 
         5. After gathering info:
         - Synthesize into structured Arabic response
-        - Cite sources (article numbers, dates, URLs)
+        - Cite sources (article numbers, dates)
         - Note confidence levels and gaps
         - Suggest follow-up questions
 
